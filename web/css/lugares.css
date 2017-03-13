@@ -1,0 +1,14 @@
+.top_bg {
+    background: url(../images/madrid.jpg);
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+        height: 180px;
+}
+
+.top h2 {
+    padding-top: 5%;
+}
+

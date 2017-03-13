@@ -33,6 +33,14 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 100%;
 }
+
+.fixed {
+    z-index: 5000;
+    width: 100%;
+    position:fixed;
+    top:0;
+}
+
 .wrap{
 	margin:0 auto;
 	width:80%;
@@ -49,6 +57,7 @@ body {
 /*--- social-icons ----*/
 .social-icons {
 	float:right;
+    margin-top: 10px;
 }
 .social-icons li:first-child{
 	margin-left: 0;
