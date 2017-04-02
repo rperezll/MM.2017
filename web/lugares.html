@@ -75,48 +75,26 @@ $(document).ready(function(){
 				<li><a href="contact.html">Sobre nosotros</a></li>
 			</ul>
 		</div>
-		<div class="h_search">
-    		<form>
-    			<input type="text" value="" placeholder="search something...">
-    			<input type="submit" value="">
-    		</form>
-		</div>
         <div class="menu">
         	<ul>
-				<li class="active"><a href="index.html">Home</a></li>
-				<li><a href="about.html">About us</a></li>
-				<li><a href="service.html">Service</a></li>
-				<li><a href="index.html">Pages</a></li>
-				<li><a href="blog.html">Blog</a></li>
-				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li class="active"><a href="lugares.html">Lugares de interés</a></li>
+				<li><a href="service.html">Dónde comer</a></li>
+				<li><a href="blog.html">Actividades</a></li>
+				<li><a href="contact.html">Sobre nosotros</a></li>
             </ul>
-        </div>
-        <div class="search">
-            <form action="/iphone/search.html">
-                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
-            </form>
         </div>
         <div class="sub-head">
-        	<ul>
-            	<li><a href="#" id="menu">Menu  <span></span></a></li>
-            	<li><a href="#" id="search">Search <span></span></a></li>
-            </ul>
+            	<a href="#" id="menu">Menu  <span></span></a>
             <div class="clear"></div>
         </div>
 	   <script type="text/javascript">
-		$(".menu,.search").hide();
+		$(".menu").hide();
 		$("#menu").click(function(){
 			$(".menu").toggle();
 			$(".search").hide();
 			$("#search").removeClass("active");
 			$("#menu").toggleClass("active");
-		});
-		$("#search").click(function(){
-			$(".search").toggle();
-			$(".menu").hide();
-			$("#menu").removeClass("active");
-			$("#search").toggleClass("active");
-			$(".text").focus();
 		});
 	</script>
 	<script type="text/javascript" src="js/script.js"></script>
@@ -140,26 +118,26 @@ $(document).ready(function(){
 		<!-- start span_of_3 -->
 		<div class="span_of_3">
 			<div class="span1_of_3">
-				<a href="details.html"><img src="images/alcala.jpg" alt="Puerta de alcalá"></a>
+				<a href="puertaalcala.html"><img src="images/alcala.jpg" alt="Puerta de alcalá"></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">Puerta de Alcalá</a></h3>
+					<h3><a href="puertaalcala.html">Puerta de Alcalá</a></h3>
                     <p>La Puerta de Alcalá es uno de los monumentos más representativos de Madrid. Se encuentra en el inicio de la calle Alcalá, en la Plaza de la Independencia.</p>
 					<p>La Puerta de Alcalá se inauguró en 1778 de la mano de Francisco Sabatini, arquitecto italiano que trabajó la mayor parte de su vida en España. Anteriormente existió otra Puerta de Alcalá de ladrillo, pero Carlos III ordenó su derribo y reconstrucción.</p>
 				</div>
 				<div class="ser_btn">
-					<a class="button  ser_btn1" href="details.html">Saber más</a>
+					<a class="button  ser_btn1" href="puertaalcala.html">Saber más</a>
 				</div>
 			</div>
 			<div class="span1_of_3">
-				<a href="details.html"><img src="images/puerta.jpg" alt=""></a>
+				<a href="puertaalcala.html"><img src="images/puerta.jpg" alt=""></a>
 				<div class="span1_of_3_text">
-					<h3><a href="details.html">Puerta del Sol</a></h3>
+					<h3><a href="puertaalcala.html">Puerta del Sol</a></h3>
 					<p>La Puerta del Sol es una de las plazas más famosas de Madrid y en ella podréis encontrar algunos de los puntos y edificios más significativos de la capital.</p>
                         
                     <p>Su construcción se llevó a cabo en varias etapas; comenzó con la construcción de la Casa de Correos a mediados del siglo XVIII y un siglo más tarde, entre 1857 y 1862, tomó su forma definitiva gracias a los arquitectos Lucio del Valle, Juan Rivera y José Morer. Ya en el siglo XX se añadieron los jardines, la fuente y se incrementó la zona peatonal.</p>
 				</div>
 				<div class="ser_btn">
-					<a class="button  ser_btn1" href="details.html">Saber más</a>
+					<a class="button  ser_btn1" href="puertaalcala.html">Saber más</a>
 				</div>
 			</div>
 			<div class="span1_of_3">
@@ -212,45 +190,6 @@ $(document).ready(function(){
 	</div>
 </div>
 <!-- start footer -->
-<div class="footer_bg">
-<div class="wrap">
-	<div class="footer">
-		<!-- start span_of_4 -->
-		<div class="span_of_4">
-			<div class="span1_of_4">
-				<h4>popular post</h4>
-				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<ul class="f_nav1">
-					<li class="timer"><a href="#">25-september 2013 </a></li>
-				</ul>
-				<p class="top">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-				<ul class="f_nav1">
-					<li class="timer"><a href="#">25-september 2013 </a></li>
-				</ul>
-			</div>
-			<div class="span1_of_4">
-				<h4>tags</h4>
-				<p>It is a long established fact that a reader will be distracted by the<big>readable</big> content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal <big>blog</big> Many desktop publishing packages and web page editors now use Lorem.</p>
-			</div>
-			<div class="span1_of_4">
-				<h4>a little about us</h4>
-				<p class="btm">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-				<p>It is a long established fact that a reader will be of a page when looking at its layout.</p>
-
-			</div>
-			<div class="span1_of_4">
-				<h4>get in touch</h4>
-				<p class="btm">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since</p>
-				<p class="btm1 pin">Texas, US</p>
-				<p class="btm1 mail"><a href="mailto:info@mycompany.com">info(at)mycompany.com </a></p>
-				<p class="call">01234 444 777</p>
-			</div>
-			<div class="clear"></div>
-		</div>
-	</div>
-</div>
-</div>
-<!-- start footer -->
 <div class="footer_bg1">
 <div class="wrap">
 	<div class="footer1">
@@ -281,7 +220,7 @@ $(document).ready(function(){
 			</ul>
 		</div>
 		<div class="copy">
-			<p class="link"><span>&copy; 2014 Webworld-v2. All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+			<p class="link"><span>&copy; ConoceMadrid Todos los derechos reservados | Diseño por &nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
 		</div>
 		<div class="clear"></div>
 	</div>
