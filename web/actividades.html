@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Webworld-v2 Website Template | Blog :: w3layouts</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- start top_js_button -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+</head>
+<body>
+<!-- start header -->
+<div class="header_bg">
+<div class="wrap">
+	<div class="header">
+		<div class="logo">
+			<a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px"/> </a>
+		</div>
+		<div class="social-icons">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+<!-- start header -->
+<div class="header_btm">
+<div class="wrap">
+	<div class="header_sub">
+		<div class="h_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="lugares.html">Lugares de interés</a></li>
+				<li><a href="service.html">Dónde comer</a></li>
+				<li class="active"><a href="actividades.html">Actividades</a></li>
+				<li><a href="contact.html">Sobre nosotros</a></li>
+			</ul>
+		</div>
+		<div class="h_search">
+    		<form>
+    			<input type="text" value="" placeholder="search something...">
+    			<input type="submit" value="">
+    		</form>
+		</div>
+        
+        <div class="search">
+            <form action="/iphone/search.html">
+                <input type="text" value="Search" onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search';}" class="text">
+            </form>
+        </div>
+        <div class="sub-head">
+        	<ul>
+            	<li><a href="#" id="menu">Menu  <span></span></a></li>
+            	<li><a href="#" id="search">Search <span></span></a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+	   <script type="text/javascript">
+		$(".menu,.search").hide();
+		$("#menu").click(function(){
+			$(".menu").toggle();
+			$(".search").hide();
+			$("#search").removeClass("active");
+			$("#menu").toggleClass("active");
+		});
+		$("#search").click(function(){
+			$(".search").toggle();
+			$(".menu").hide();
+			$("#menu").removeClass("active");
+			$("#search").toggleClass("active");
+			$(".text").focus();
+		});
+	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<div class="clear"></div>
+
+		<div class="clear"></div>
+</div>
+</div>
+</div>
+<!-- start top_bg -->
+<div class="top_bg">
+<div class="wrap">
+	<div class="top">
+		<h2>actividades culturales</h2>
+ 	</div>
+</div>
+</div>
+<!-- start main -->
+<div class="wrap">
+<div class="main">
+		<div class="blog">
+			<div class="blog_list">
+				<h2>Autobús Tour Centro</h2>
+				<div class="blog_para">
+					<p class="para"><a  href="autobus.html"><img src="images/blog1.jpg" alt=""></a>Madrid City Tour es una de las formas más cómodas y sencillas de conocer la ciudad. Es tan fácil como comprar el billete, válido para uno o dos días según la tarifa elegida, montarse en el autobús, colocarse los auriculares para seguir la audioguía y disfrutar de las calles, los monumentos y los puntos de interés, con la posibilidad de bajarse donde más apetezca y volver a subir cuantas veces queramos.</p>
+					<div class="read_more">
+						 <a class="btn" href="autobus.html">Leer más</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			 </div>
+			<div class="blog_list">
+				<h2>Pack Museos</h2>
+				<div class="blog_para">
+					<p class="para"><a  href="museos.html"><img src="images/blog2.jpg" alt=""></a>Hay muchas maneras de disfrutar de Madrid con niños, y una de ellas es conocer sus fantásticos museos y las acitividades que ofrecen para el público infantil. Con esta breve guía de 7 museos de Madrid para disfrutar con niños podréis haceros una idea de las posibilidades que las instituciones de la capital española ofrecen</p>
+					<div class="read_more">
+						 <a class="btn" href="museos.html">Leer más</a>
+					</div>
+				</div>
+			   <div class="clear"></div>				
+			 </div>
+			<div class="blog_list">
+				<h2>Vista Toledo </h2>
+				<div class="blog_para">
+					<p class="para"><a  href="toledo.html"><img src="images/blog3.jpg" alt=""></a>Un día en Toledo siempre sabe a poco. La famosa “ciudad de las tres culturas” nos espera muy cerca de la capital de España, a escasos 70 kilómetros de Madrid. Su casco histórico, declarado Patrimonio de la Humanidad por la UNESCO, es apasionante, entre otros motivos, porque conserva tal cual el trazado que tenía en la Edad Media. El recorrido por sus estrechas calles nos descubrirá un conjunto monumental increíble y muy vivo, tanto por dentro como por fuera.</p>
+					<div class="read_more">
+						 <a class="btn" href="toledo.html">Leer más</a>
+					</div>
+				</div>
+			   <div class="clear"></div>				
+			 </div>		 
+			</div>
+		</div>
+</div>
+
+<!-- start footer -->
+<div class="footer_bg1">
+<div class="wrap">
+	<div class="footer1">
+		<!-- scroll_top_btn -->
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		<!--end scroll_top_btn -->		
+		<div class="social-icons">
+		    <ul>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+		      <li><a href="#" target="_blank"></a></li>
+			  <li><a href="#" target="_blank"></a></li>
+			</ul>
+		</div>
+		<div class="copy">
+			<p class="link"><span>&copy; 2014 Webworld-v2. All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+</div>
+</body>
+</html>
