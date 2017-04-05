@@ -6,185 +6,195 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>The Webworld-v2 Website Template | Details :: w3layouts</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
-<!-- start top_js_button -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-   <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-    <script type="text/javascript">
-$(document).ready(function(){
 
-	$(window).scroll(function(){
-		var barra = $(window).scrollTop();
-		var posicion =  (barra * 0.10);
-        
-        $('.top_bg').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
-      
-	});
-    
-});
+<head>
+    <title>ConoceMadrid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1200);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var barra = $(window).scrollTop();
+                var posicion = (barra * 0.10);
+                $('.top_bg').css({
+                    'background-position': '0 -' + posicion + 'px'
+                });
+            });
+        });
     </script>
 </head>
-<body>
-<!-- start header -->
-<div class="header_bg">
-<div class="wrap">
-	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px"/> </a>
-		</div>
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-<!-- start header -->
-<div class="header_btm">
-<div class="wrap">
-	<div class="header_sub">
-		<div class="h_menu">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="lugares.html">Lugares de interés</a></li>
-				<li><a href="service.html">Dónde comer</a></li>
-				<li><a href="blog.html">Actividades</a></li>
-				<li><a href="contact.html">Sobre nosotros</a></li>
-			</ul>
-		</div>
-        <div class="menu">
-        	<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="lugares.html">Lugares de interés</a></li>
-				<li><a href="service.html">Dónde comer</a></li>
-				<li><a href="blog.html">Actividades</a></li>
-				<li><a href="contact.html">Sobre nosotros</a></li>
-            </ul>
-        </div>
-        <div class="sub-head">
-            	<a href="#" id="menu">Menu <span></span></a>
-            <div class="clear"></div>
-        </div>
-	   <script type="text/javascript">
-		$(".menu").hide();
-		$("#menu").click(function(){
-			$(".menu").toggle();
-			$(".search").hide();
-			$("#search").removeClass("active");
-			$("#menu").toggleClass("active");
-		});
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<div class="clear"></div>
 
-		<div class="clear"></div>
-</div>
-</div>
-</div>
-<!-- start top_bg -->
-<div class="top_bg">
-<div class="wrap">
-	<div class="top">
-        <h2>Palacio Real</h2>
- 	</div>
-</div>
-</div>
-<!-- start main -->
-<div class="wrap">
-	<div class="main">
-		<div class="details">
-			<div class="det_pic">
-				  <img src="images/palacio.jpg" alt="" />
-			</div>
-            <h3>Descripción</h3><hr>
-			<div class="det_text">
-                <p class="para">El Palacio Real de Madrid es la residencia oficial del rey de España; no obstante, los actuales reyes no habitan en él, sino en el Palacio de la Zarzuela, por lo que es utilizado para ceremonias de Estado y actos solemnes.1 Con una extensión de 135 000 m² y 3418 habitaciones (en superficie, casi el doble que el Palacio de Buckingham o el Palacio de Versalles), es el palacio real más grande de Europa Occidental,2 y uno de los más grandes del mundo. Alberga un valioso patrimonio histórico-artístico, destacando el conjunto de instrumentos musicales conocido como los Stradivarius Palatinos, y colecciones muy relevantes de otras disciplinas como pintura, escultura y tapicería. Las salas de Estado y las colecciones artísticas están abiertas a las visitas siempre que no haya actos oficiales.3</p>
-			</div>
-            <div class="det_text">
-                <p class="para">
-                Es conocido también como Palacio de Oriente, a pesar de estar situado en la parte más occidental de Madrid, debido a su ubicación en la Plaza de Oriente, llamada así al estar situada al este del palacio. A eje con el palacio, y enfrentado, se encuentra al otro extremo de la plaza el Teatro Real.4
-                </p>
+<body>
+    <!-- start header -->
+    <div class="header_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px" /> </a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
-        <br>
-        <div class="details">
-		  <h3>Imágenes</h3><hr>
-            <p class="para">Aqui tengo que poner una galería de imágenes</p><br>
+    </div>
+    <!-- start header -->
+    <div class="header_btm">
+        <div class="wrap">
+            <div class="header_sub">
+                <div class="h_menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
+                        <li><a href="service.html">Dónde comer</a></li>
+                        <li><a href="blog.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
+                        <li><a href="service.html">Dónde comer</a></li>
+                        <li><a href="blog.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="sub-head"> 
+                    <a href="#" id="menu">Menu</a>
+                    <div class="clear"></div>
+                </div>
+                <script type="text/javascript">
+                    $(".menu").hide();
+                    $("#menu").click(function () {
+                        $(".menu").toggle();
+                        $(".search").hide();
+                        $("#search").removeClass("active");
+                        $("#menu").toggleClass("active");
+                    });
+                </script>
+                <script type="text/javascript" src="js/script.js"></script>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
         </div>
-        <br>
-        <div class="details">
-		  <h3>Localización</h3><hr>
-            <p class="para">Calle de Bailén, s/n, 28071 Madrid</p><br>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5888109937837!2d-3.7165006847918196!3d40.417959063488965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e7da4a9c1%3A0x2e7fec79d6ce4851!2sPalacio+Real+de+Madrid!5e0!3m2!1ses!2ses!4v1491336291096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- start top_bg -->
+    <div class="top_bg">
+        <div class="wrap">
+            <div class="top">
+                <h2>Palacio Real</h2> </div>
         </div>
-        <br>
-        <p>
-            <a type="button" class="btn btn-default btn-sm" href="lugares.html">
-              <span class="glyphicon glyphicon-circle-arrow-left"></span> Visitar otros lugares
-            </a>
-        </p>
-	</div>
-</div>
-<!-- start footer -->
-<div class="footer_bg1">
-<div class="wrap">
-	<div class="footer1">
-		<!-- scroll_top_btn -->
-	    <script type="text/javascript">
-			$(document).ready(function() {
-			
-				var defaults = {
-		  			containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear' 
-		 		};
-				
-				
-				$().UItoTop({ easingType: 'easeOutQuart' });
-				
-			});
-		</script>
-		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-		<!--end scroll_top_btn -->
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="copy">
-			<p class="link"><span>&copy; ConoceMadrid Todos los derechos reservados | Diseño por &nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
+    </div>
+    <!-- start main -->
+    <div class="wrap">
+        <div class="main">
+            <div class="details">
+                <div class="det_pic"> <img src="images/palacio.jpg" alt="" /> </div>
+                <h3>Descripción</h3>
+                <hr>
+                <div class="det_text">
+                    <p class="para">El Palacio Real de Madrid es la residencia oficial del rey de España; no obstante, los actuales reyes no habitan en él, sino en el Palacio de la Zarzuela, por lo que es utilizado para ceremonias de Estado y actos solemnes.1 Con una extensión de 135 000 m² y 3418 habitaciones (en superficie, casi el doble que el Palacio de Buckingham o el Palacio de Versalles), es el palacio real más grande de Europa Occidental,2 y uno de los más grandes del mundo. Alberga un valioso patrimonio histórico-artístico, destacando el conjunto de instrumentos musicales conocido como los Stradivarius Palatinos, y colecciones muy relevantes de otras disciplinas como pintura, escultura y tapicería. Las salas de Estado y las colecciones artísticas están abiertas a las visitas siempre que no haya actos oficiales.3</p>
+                </div>
+                <div class="det_text">
+                    <p class="para"> Es conocido también como Palacio de Oriente, a pesar de estar situado en la parte más occidental de Madrid, debido a su ubicación en la Plaza de Oriente, llamada así al estar situada al este del palacio. A eje con el palacio, y enfrentado, se encuentra al otro extremo de la plaza el Teatro Real.4 </p>
+                </div>
+            </div>
+            <br>
+            <div class="details">
+                <h3>Imágenes</h3>
+                <hr>
+                <p class="para">Aqui tengo que poner una galería de imágenes</p>
+                <br> </div>
+            <br>
+            <div class="details">
+                <h3>Localización</h3>
+                <hr>
+                <p class="para">Calle de Bailén, s/n, 28071 Madrid</p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.5888109937837!2d-3.7165006847918196!3d40.417959063488965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e7da4a9c1%3A0x2e7fec79d6ce4851!2sPalacio+Real+de+Madrid!5e0!3m2!1ses!2ses!4v1491336291096" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <p>
+                <a type="button" class="btn btn-default btn-sm" href="lugares.html"> <span class="glyphicon glyphicon-circle-arrow-left"></span> Visitar otros lugares </a>
+            </p>
+        </div>
+    </div>
+    <!-- start footer -->
+    <div class="footer_bg1">
+        <div class="wrap">
+            <div class="footer1">
+                <!-- scroll_top_btn -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200
+                            , easingType: 'linear'
+                        };
+                        $().UItoTop({
+                            easingType: 'easeOutQuart'
+                        });
+                    });
+                </script> <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+                <!--end scroll_top_btn -->
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p class="link"><span>&copy; ConoceMadrid Todos los derechos reservados | Diseño por &nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
