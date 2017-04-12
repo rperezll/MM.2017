@@ -583,6 +583,13 @@ big {
 	color: #ffffff;
 	text-transform: uppercase;
 }
+
+.top h1{
+	font-size: 2em;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
 .about{
 	display: block;
 }
