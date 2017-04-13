@@ -1,0 +1,218 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+    <title>ConoceMadrid</title>
+    <meta name=”description” content="Distintos lugares recomendados en Madrid donde podrá tener una deliciosa comida" />
+    <meta name=”keyword” content="Madrid, Restaurante, Comida, Actividad" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/comer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1200);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="header_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px" /> </a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://es.wikipedia.org/wiki/RSS" target="_blank" aria-label="RSS"></a>
+                        </li>
+                        <li>
+                            <a href="https://es-es.facebook.com/" target="_blank" aria-label="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es" target="_blank" aria-label="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://es.linkedin.com/" target="_blank" aria-label="Linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- start header -->
+    <div class="header_btm">
+        <div class="wrap">
+            <div class="header_sub">
+                <div class="h_menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="lugares.html">Lugares de interés</a></li>
+                        <li class="active"><a href="dondecomer.html">Dónde comer</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="lugares.html">Lugares de interés</a></li>
+                        <li class="active"><a href="dondecomer.html">Dónde comer</a></li>
+                        <li><a href="actividades.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="sub-head">
+                    <ul> <a href="#" id="menu">Menu</a> </ul>
+                    <div class="clear"></div>
+                </div>
+                <script type="text/javascript">
+                    $(".menu,.search").hide();
+                    $("#menu").click(function () {
+                        $(".menu").toggle();
+                        $(".search").hide();
+                        $("#search").removeClass("active");
+                        $("#menu").toggleClass("active");
+                    });
+                    $("#search").click(function () {
+                        $(".search").toggle();
+                        $(".menu").hide();
+                        $("#menu").removeClass("active");
+                        $("#search").toggleClass("active");
+                        $(".text").focus();
+                    });
+                </script>
+                <script type="text/javascript" src="js/script.js"></script>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!-- start top_bg -->
+    <div class="top_bg">
+        <div class="wrap">
+            <div class="top">
+                <h1>Donde Comer</h1> </div>
+        </div>
+    </div>
+    <!-- start main -->
+    <div class="wrap">
+        <div class="main comer">
+            <!-- start span_of_3 -->
+            <div class="span_of_3 ">
+                <div class="span1_of_3">
+                    <a href="https://lastortillasdegabino.com/"><img src="images/tortillas_gabino-1038x576.jpg" alt="Imagen de una deliciosa Tortilla"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="https://lastortillasdegabino.com/">La Tortilla de Gabino</a></h3>
+                        <p>Un clásico entre clásicos en España y es la maravillosa tortilla, en este restaurante podrá probar una gran variedad.</p>
+                    </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="https://lastortillasdegabino.com/" aria-label="Saber más acerca de La Tortilla de Gabino">Información</a> </div>
+                </div>
+                <div class="span1_of_3">
+                    <a href="http://www.goikogrill.com/"><img src="images/goiko.jpg" alt="Conjunto de imagenes de distintas tipos de Hamburguesas"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="http://www.goikogrill.com/">Goiko Grill</a></h3>
+                        <p>Si lo que buscas es una hamburguesa, Goiko es tu lugar, aqui podras degustar diferentes tipos siendo la mejor la de costillas.</p>
+                    </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="http://www.goikogrill.com/" aria-label="Saber más acerca de Goiko Grill">Información</a> </div>
+                </div>
+                <div class="span1_of_3">
+                    <a href="http://www.livinginlondonshop.es/"><img src="images/living-in-london-afternoon-tea.jpg" alt="Imagen de un croissant y distintos postres"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="http://www.livinginlondonshop.es/">Living in London</a></h3>
+                        <p>Nada mejor después de una comilona que ir a un lugar tranquilo donde poder probar distintos riquisimos postres tradicionales.</p>
+                    </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="http://www.livinginlondonshop.es/" aria-label="Saber más acerca del Templo de Debod">Información</a> </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!--  -->
+            <div class="span_of_3">
+                <div class="span1_of_3">
+                    <a href="http://www.dstageconcept.com/"><img src="images/ds2.jpg" alt="Conjunto de imagenes de platos elegantes"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="http://www.dstageconcept.com/">DSTAgE</a></h3>
+                        <p>En este restaurante podrá probar diversos menus de degustación de comida moderna y sorprendente por un gran cocinero.</p>
+                    </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="http://www.dstageconcept.com/" aria-label="Saber más acerca de DSTAgE">Información</a> </div>
+                </div>
+                <div class="span1_of_3">
+                    <a href="http://www.marisqueriaribeiradomino.com/es/des-752-inicio"><img src="images/marisqueria.jpg" alt="Imagen de una bandeja llena de marisco como bogavante y gambas"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="http://www.marisqueriaribeiradomino.com/es/des-752-inicio">Marisqueria Ribeira do Mino</a></h3>
+                        <p>Si esta cansado carne, le recomiendo que venga a esta marisquería a comer.Del mar a su plato solo hay un paso.</p>
+                    </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="http://www.marisqueriaribeiradomino.com/es/des-752-inicio" aria-label="Saber más acerca de la Marisquería Ribeira do Mino">Información</a> </div>
+                </div>
+                <div class="span1_of_3">
+                    <a href="http://www.restauranteslaalbufera.com/"><img src="images/L'Albufera.jpg" alt="Imagen de una paella con una pinta deliciosa"></a>
+                    <div class="span1_of_3_text">
+                        <h3><a href="http://www.restauranteslaalbufera.com/">L'Albufera</a></h3>
+                        <p>No puede irse de Madrid sin probar una de las mejores paellas. Un lugar tranquilo </p>
+                        <br> </div>
+                    <div class="ser_btn"> <a class="button  ser_btn1" href="http://www.restauranteslaalbufera.com/" aria-label="Saber más acerca de L'Albufera">Información</a> </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <!-- end grids_of_3 -->
+        </div>
+    </div>
+    <!-- start footer -->
+    <div class="footer_bg1">
+        <div class="wrap">
+            <div class="footer1">
+                <!-- scroll_top_btn -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200
+                            , easingType: 'linear'
+                        };
+                        $().UItoTop({
+                            easingType: 'easeOutQuart'
+                        });
+                    });
+                </script> <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+                <!--end scroll_top_btn -->
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="https://es.wikipedia.org/wiki/RSS" target="_blank" aria-label="RSS"></a>
+                        </li>
+                        <li>
+                            <a href="https://es-es.facebook.com/" target="_blank" aria-label="Facebook"></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=es" target="_blank" aria-label="Twitter"></a>
+                        </li>
+                        <li>
+                            <a href="https://es.linkedin.com/" target="_blank" aria-label="Linkedin"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p class="link"><span>&copy; 2014 Webworld-v2. All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,192 +1,249 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
-<html>
-<head>
-<title>ConoceMadrid</title>
-    <meta name=”description” content="Descripcion y localizacion de la Puerta del Sol"/>
-    <meta name=”keyword” content="Madrid, Sol, Tour, Actividad"/>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
-<!-- start top_js_button -->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript" src="js/menu.js"></script>
-   <script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
-				event.preventDefault();
-				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
-			});
-		});
-	</script>
-    <script type="text/javascript">
-$(document).ready(function(){
+<html lang="es">
 
-	$(window).scroll(function(){
-		var barra = $(window).scrollTop();
-		var posicion =  (barra * 0.10);
+<head>
+    <title>ConoceMadrid</title>
+    <meta name=”description” content="Descripcion y localizacion de la Puerta del Sol" />
+    <meta name=”keyword” content="Madrid, Sol, Tour, Actividad" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        .modal-dialog {
+            width: 600px;
+        }
         
-        $('.top_bg').css({
-			'background-position': '0 -' + posicion + 'px'
-		});
-      
-	});
-    
-});
+        .thumbnail {
+            margin-bottom: 6px;
+        }
+    </style>
+    <!-- start top_js_button -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1200);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var barra = $(window).scrollTop();
+                var posicion = (barra * 0.10);
+                $('.top_bg').css({
+                    'background-position': '0 -' + posicion + 'px'
+                });
+            });
+        });
     </script>
 </head>
-<body>
-<!-- start header -->
-<div class="header_bg">
-<div class="wrap">
-	<div class="header">
-		<div class="logo">
-			<a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px"/> </a>
-		</div>
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
-<!-- start header -->
-<div class="header_btm">
-<div class="wrap">
-	<div class="header_sub">
-		<div class="h_menu">
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li class="active"><a href="lugares.html">Lugares de interés</a></li>
-				<li><a href="service.html">Dónde comer</a></li>
-				<li><a href="blog.html">Actividades</a></li>
-				<li><a href="contact.html">Sobre nosotros</a></li>
-			</ul>
-		</div>
-        <div class="menu">
-        	<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li class="active"><a href="lugares.html">Lugares de interés</a></li>
-				<li><a href="service.html">Dónde comer</a></li>
-				<li><a href="blog.html">Actividades</a></li>
-				<li><a href="contact.html">Sobre nosotros</a></li>
-            </ul>
-        </div>
-        <div class="sub-head">
-            	<a href="#" id="menu">Menu</a>
-            <div class="clear"></div>
-        </div>
-	   <script type="text/javascript">
-		$(".menu").hide();
-		$("#menu").click(function(){
-			$(".menu").toggle();
-			$(".search").hide();
-			$("#search").removeClass("active");
-			$("#menu").toggleClass("active");
-		});
-	</script>
-	<script type="text/javascript" src="js/script.js"></script>
-	<div class="clear"></div>
 
-		<div class="clear"></div>
-</div>
-</div>
-</div>
-<!-- start top_bg -->
-<div class="top_bg">
-<div class="wrap">
-	<div class="top">
-        <h2>Puerta del Sol</h2>
- 	</div>
-</div>
-</div>
-<!-- start main -->
-<div class="wrap">
-	<div class="main">
-		<div class="details">
-			<div class="det_pic">
-				  <img src="images/puerta.jpg" alt="" />
-			</div>
-            <h3>Descripción</h3><hr>
-			<div class="det_text">
-                <p class="para">La Puerta del Sol es una plaza de Madrid (España). Aquí se encuentra desde 1950 el denominado Kilómetro Cero de las carreteras radiales españolas. El edificio más antiguo de la Puerta del Sol es la Casa de Correos y en ella destaca el reloj de torre que fue construido y donado en el siglo XIX por José Rodríguez de Losada, y cuyas campanadas de las 12 de la noche del 31 de diciembre marcan la tradicional toma de las doce uvas a la gran mayoría de los españoles. Dichas campanadas se empezaron a televisar el 31 de diciembre de 1962 en La 1 de TVE, a partir de ese año no se ha dejado de retransmitir por diversos canales de televisión de España. La Puerta del Sol es un lugar de cita, un lugar de paso entre diversas partes de Madrid. Es visita turística obligada de aquellos que se acercan a Madrid.</p>
-			</div>
-            <div class="det_text">
-                <p class="para">
-                La Puerta del Sol fue en sus orígenes uno de los accesos de la cerca que rodeaba Madrid en el siglo XV. Esta cerca recogía en su perímetro los arrabales medievales que habían ido creciendo extramuros, en torno a la muralla cristiana del siglo XII. El nombre de la puerta proviene de un sol que adornaba la entrada, colocado ahí por estar orientada la puerta hacia levante. Entre los edificios que le daban prestigio en los comienzos se encontraba Iglesia del Buen Suceso y San Felipe el Real.
-                </p>
+<body>
+    <!-- start header -->
+    <div class="header_bg">
+        <div class="wrap">
+            <div class="header">
+                <div class="logo">
+                    <a href="index.html"><img src="images/madrid-logo.png" alt="Logo de la Madrid" height="50px" /> </a>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
             </div>
         </div>
-        <br>
-        <div class="details">
-		  <h3>Imágenes</h3><hr>
-            <p class="para">Aqui tengo que poner una galería de imágenes</p><br>
+    </div>
+    <!-- start header -->
+    <div class="header_btm">
+        <div class="wrap">
+            <div class="header_sub">
+                <div class="h_menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
+                        <li><a href="dondecomer.html">Dónde comer</a></li>
+                        <li><a href="blog.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
+                        <li><a href="dondecomer.html">Dónde comer</a></li>
+                        <li><a href="blog.html">Actividades</a></li>
+                        <li><a href="contact.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="sub-head"> <a href="#" id="menu">Menu</a>
+                    <div class="clear"></div>
+                </div>
+                <script type="text/javascript">
+                    $(".menu").hide();
+                    $("#menu").click(function () {
+                        $(".menu").toggle();
+                        $(".search").hide();
+                        $("#search").removeClass("active");
+                        $("#menu").toggleClass("active");
+                    });
+                </script>
+                <script type="text/javascript" src="js/script.js"></script>
+                <div class="clear"></div>
+                <div class="clear"></div>
+            </div>
         </div>
-        <br>
-        <div class="details">
-		  <h3>Localización</h3><hr>
-            <p class="para">Plaza de la Puerta del Sol, s/n, 28013 Madrid</p><br>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.634306917872!2d-3.705717184791816!3d40.416951363550275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e19e23f5f%3A0xcec2a0e4d9bed6fb!2sPuerta+del+Sol!5e0!3m2!1ses!2ses!4v1491332487410" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>   
+    </div>
+    <!-- start top_bg -->
+    <div class="top_bg">
+        <div class="wrap">
+            <div class="top">
+                <h2>Puerta del Sol</h2> </div>
         </div>
-        <br>
-        <p>
-            <a type="button" class="btn btn-default btn-sm" href="lugares.html">
-              <span class="glyphicon glyphicon-circle-arrow-left"></span> Visitar otros lugares
-            </a>
-        </p>
-	</div>
-</div>
-<!-- start footer -->
-<div class="footer_bg1">
-<div class="wrap">
-	<div class="footer1">
-		<!-- scroll_top_btn -->
-	    <script type="text/javascript">
-			$(document).ready(function() {
-			
-				var defaults = {
-		  			containerID: 'toTop', // fading element id
-					containerHoverID: 'toTopHover', // fading element hover id
-					scrollSpeed: 1200,
-					easingType: 'linear' 
-		 		};
-				
-				
-				$().UItoTop({ easingType: 'easeOutQuart' });
-				
-			});
-		</script>
-		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
-		<!--end scroll_top_btn -->
-		<div class="social-icons">
-		    <ul>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-		      <li><a href="#" target="_blank"></a></li>
-			  <li><a href="#" target="_blank"></a></li>
-			</ul>
-		</div>
-		<div class="copy">
-			<p class="link"><span>&copy; ConoceMadrid Todos los derechos reservados | Diseño por &nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
-		</div>
-		<div class="clear"></div>
-	</div>
-</div>
-</div>
+    </div>
+    <!-- start main -->
+    <div class="wrap">
+        <div class="main">
+            <div class="details">
+                <div class="det_pic"> <img src="images/puerta.jpg" alt="" /> </div>
+                <h3>Descripción</h3>
+                <hr>
+                <div class="det_text">
+                    <p class="para">La Puerta del Sol es una plaza de Madrid (España). Aquí se encuentra desde 1950 el denominado Kilómetro Cero de las carreteras radiales españolas. El edificio más antiguo de la Puerta del Sol es la Casa de Correos y en ella destaca el reloj de torre que fue construido y donado en el siglo XIX por José Rodríguez de Losada, y cuyas campanadas de las 12 de la noche del 31 de diciembre marcan la tradicional toma de las doce uvas a la gran mayoría de los españoles. Dichas campanadas se empezaron a televisar el 31 de diciembre de 1962 en La 1 de TVE, a partir de ese año no se ha dejado de retransmitir por diversos canales de televisión de España. La Puerta del Sol es un lugar de cita, un lugar de paso entre diversas partes de Madrid. Es visita turística obligada de aquellos que se acercan a Madrid.</p>
+                </div>
+                <div class="det_text">
+                    <p class="para"> La Puerta del Sol fue en sus orígenes uno de los accesos de la cerca que rodeaba Madrid en el siglo XV. Esta cerca recogía en su perímetro los arrabales medievales que habían ido creciendo extramuros, en torno a la muralla cristiana del siglo XII. El nombre de la puerta proviene de un sol que adornaba la entrada, colocado ahí por estar orientada la puerta hacia levante. Entre los edificios que le daban prestigio en los comienzos se encontraba Iglesia del Buen Suceso y San Felipe el Real. </p>
+                </div>
+            </div>
+            <br>
+            <div class="details">
+                <h3>Imágenes</h3>
+                <hr>
+                <!--Start Image Gallery -->
+                <div class="container">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="La Catedral desde lejos"><img src="images/catedralImage1.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="La Catedral de frente"><img src="images/catedralImage2.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="El interior de la Catedral"><img src="images/catedralImage3.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="Catedral de la Almudena"><img src="images/catedralImage4.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Heading</h3> </div>
+                            <div class="modal-body"> </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Image Gallery -->
+            </div>
+            <br>
+            <div class="details">
+                <h3>Localización</h3>
+                <hr>
+                <p class="para">Plaza de la Puerta del Sol, s/n, 28013 Madrid</p>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.634306917872!2d-3.705717184791816!3d40.416951363550275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e19e23f5f%3A0xcec2a0e4d9bed6fb!2sPuerta+del+Sol!5e0!3m2!1ses!2ses!4v1491332487410" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <br>
+            <p>
+                <a type="button" class="btn btn-default btn-sm" href="lugares.html"> <span class="glyphicon glyphicon-circle-arrow-left"></span> Visitar otros lugares </a>
+            </p>
+        </div>
+    </div>
+    <!-- start footer -->
+    <div class="footer_bg1">
+        <div class="wrap">
+            <div class="footer1">
+                <!-- scroll_top_btn -->
+                <script type="text/javascript">
+                    $(document).ready(function () {
+                        var defaults = {
+                            containerID: 'toTop', // fading element id
+                            containerHoverID: 'toTopHover', // fading element hover id
+                            scrollSpeed: 1200
+                            , easingType: 'linear'
+                        };
+                        $().UItoTop({
+                            easingType: 'easeOutQuart'
+                        });
+                    });
+                </script> <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+                <!--end scroll_top_btn -->
+                <div class="social-icons">
+                    <ul>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="copy">
+                    <p class="link"><span>&copy; ConoceMadrid Todos los derechos reservados | Diseño por &nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <!--For Images Gallery ;Start-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.thumbnail').click(function () {
+            $('.modal-body').empty();
+            var title = $(this).parent('a').attr("title");
+            $('.modal-title').html(title);
+            $($(this).parents('div').html()).appendTo('.modal-body');
+            $('#myModal').modal({
+                show: true
+            });
+        });
+    </script>
 </body>
+
 </html>

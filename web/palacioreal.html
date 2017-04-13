@@ -1,22 +1,25 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE HTML>
-<html>
+<html lang="es">
 
 <head>
     <title>ConoceMadrid</title>
-    <meta name=”description” content="Descripción y localizacion del palacio real"/>
-    <meta name=”keyword” content="Madrid, Palacio Real, Tour, Actividad"/>
+    <meta name=”description” content="Emblemática plaza del centro de Madrid" />
+    <meta name=”keyword” content="Madrid, Palacio Real, Tour, Actividad" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
+    <style>
+        .modal-dialog {
+            width: 600px;
+        }
+        
+        .thumbnail {
+            margin-bottom: 6px;
+        }
+    </style>
     <!-- start top_js_button -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/move-top.js"></script>
@@ -81,7 +84,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li class="active"><a href="lugares.html">Lugares de interés</a></li>
-                        <li><a href="service.html">Dónde comer</a></li>
+                        <li><a href="dondecomer.html">Dónde comer</a></li>
                         <li><a href="blog.html">Actividades</a></li>
                         <li><a href="contact.html">Sobre nosotros</a></li>
                     </ul>
@@ -90,13 +93,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li class="active"><a href="lugares.html">Lugares de interés</a></li>
-                        <li><a href="service.html">Dónde comer</a></li>
+                        <li><a href="dondecomer.html">Dónde comer</a></li>
                         <li><a href="blog.html">Actividades</a></li>
                         <li><a href="contact.html">Sobre nosotros</a></li>
                     </ul>
                 </div>
-                <div class="sub-head"> 
-                    <a href="#" id="menu">Menu</a>
+                <div class="sub-head"> <a href="#" id="menu">Menu</a>
                     <div class="clear"></div>
                 </div>
                 <script type="text/javascript">
@@ -139,8 +141,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="details">
                 <h3>Imágenes</h3>
                 <hr>
-                <p class="para">Aqui tengo que poner una galería de imágenes</p>
-                <br> </div>
+                <!--Start Image Gallery -->
+                <div class="container">
+                    <div class="row">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="La Catedral desde lejos"><img src="images/catedralImage1.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="La Catedral de frente"><img src="images/catedralImage2.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="El interior de la Catedral"><img src="images/catedralImage3.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                            <div class="col-lg-3 col-sm-4 col-6">
+                                <a href="#" title="Catedral de la Almudena"><img src="images/catedralImage4.jpg" class="thumbnail img-responsive"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Heading</h3> </div>
+                            <div class="modal-body"> </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End Image Gallery -->
+            </div>
             <br>
             <div class="details">
                 <h3>Localización</h3>
@@ -197,6 +230,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
     </div>
+    <!--For Images Gallery ;Start-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.thumbnail').click(function () {
+            $('.modal-body').empty();
+            var title = $(this).parent('a').attr("title");
+            $('.modal-title').html(title);
+            $($(this).parents('div').html()).appendTo('.modal-body');
+            $('#myModal').modal({
+                show: true
+            });
+        });
+    </script>
 </body>
 
 </html>
