@@ -5,3 +5,17 @@
 .comer img {
     height: 18vw;
 }
+.span1_of_3 h2 a{
+    font-size: 1em;
+	text-transform: capitalize;
+	color: #555555;
+	text-shadow: 0 1px 0 #ffffff;
+	font-weight: 600;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+.span1_of_3 h2{
+    padding: 5px;
+}
