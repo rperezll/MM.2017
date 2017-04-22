@@ -3,11 +3,11 @@
 
 <head>
     <title>ConoceMadrid</title>
-    <meta name=”description” content="Descripcion y localización de la puerta de alcala" />
-    <meta name=”keyword” content="Madrid, Alcala, Tour, Actividad" />
+    <meta name=”description” content="Página donde podrá ponerse en contacto con nosotros para resolver cualquier duda. " />
+    <meta name=”keyword” content="Madrid, Contacto" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/lugares.css" rel="stylesheet" type="text/css" media="all" />
@@ -32,17 +32,6 @@
                 $('html,body').animate({
                     scrollTop: $(this.hash).offset().top
                 }, 1200);
-            });
-        });
-    </script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                var barra = $(window).scrollTop();
-                var posicion = (barra * 0.10);
-                $('.top_bg').css({
-                    'background-position': '0 -' + posicion + 'px'
-                });
             });
         });
     </script>
@@ -76,32 +65,40 @@
             <div class="header_sub">
                 <div class="h_menu">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
-                        <li><a href="dondecomer.html">Dónde comer</a></li>
-                        <li><a href="blog.html">Actividades</a></li>
-                        <li><a accesskey="5" href="postal.html">Enviar Postal</a></li>
+                        <li><a accesskey="1" href="index.html">Inicio</a></li>
+                        <li><a accesskey="2" href="lugares.html">Lugares de interés</a></li>
+                        <li><a accesskey="3" href="dondecomer.html">Dónde comer</a></li>
+                        <li><a accesskey="4" href="actividades.html">Actividades</a></li>
+                        <li  class="active"><a accesskey="5" href="postal.html">Enviar Postal</a></li>
                     </ul>
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li class="active"><a href="lugares.html">Lugares de interés</a></li>
-                        <li><a href="dondecomer.html">Dónde comer</a></li>
-                        <li><a href="actividades.html">Actividades</a></li>
-                        <li><a accesskey="5" href="postal.html">Enviar Postal</a></li>
+                        <li><a accesskey="1" href="index.html">Inicio</a></li>
+                        <li><a accesskey="2" href="lugares.html">Lugares de interés</a></li>
+                        <li><a accesskey="3" href="dondecomer.html">Dónde comer</a></li>
+                        <li><a accesskey="4" href="actividades.html">Actividades</a></li>
+                        <li  class="active"><a accesskey="5" href="postal.html">Enviar Postal</a></li>
                     </ul>
                 </div>
-                <div class="sub-head"> <a href="#" id="menu">Menu</a>
+                <div class="sub-head">
+                    <ul> <a href="#" id="menu">Menu</a> </ul>
                     <div class="clear"></div>
                 </div>
                 <script type="text/javascript">
-                    $(".menu").hide();
+                    $(".menu,.search").hide();
                     $("#menu").click(function () {
                         $(".menu").toggle();
                         $(".search").hide();
                         $("#search").removeClass("active");
                         $("#menu").toggleClass("active");
+                    });
+                    $("#search").click(function () {
+                        $(".search").toggle();
+                        $(".menu").hide();
+                        $("#menu").removeClass("active");
+                        $("#search").toggleClass("active");
+                        $(".text").focus();
                     });
                 </script>
                 <script type="text/javascript" src="js/script.js"></script>
@@ -114,72 +111,57 @@
     <div class="top_bg">
         <div class="wrap">
             <div class="top">
-                <h2>La puerta de Alcalá</h2> </div>
+                <h1>Enviar Postal</h1> </div>
         </div>
     </div>
     <!-- start main -->
     <div class="wrap">
         <div class="main">
-            <div class="details">
-                <div class="det_pic"> <img src="images/alcala.jpg" alt="" /> </div>
-                <h3>Descripción</h3>
-                <hr>
-                <div class="det_text">
-                    <p class="para">La Puerta de Alcalá es uno de los monumentos más representativos de Madrid. Se encuentra en el inicio de la calle Alcalá, en la Plaza de la Independencia. La Puerta de Alcalá se inauguró en 1778 de la mano de Francisco Sabatini, arquitecto italiano que trabajó la mayor parte de su vida en España. Anteriormente existió otra Puerta de Alcalá de ladrillo, pero Carlos III ordenó su derribo y reconstrucción. </p>
-                </div>
-                <div class="det_text">
-                    <p class="para">El nombre de la Puerta de Alcalá, al igual que el de la calle con el mismo nombre, vienen por estar situadas en el camino que existía para ir a Alcalá de Henares. La denominación de puerta tampoco es casualidad ya que, en sus orígenes, fue una de las cinco puertas que daban acceso a la Villa de Madrid. En 1889 se convirtió en plaza. Víctor Manuel y Ana Belén la dedicaron una canción en 1986. Por su situación, en la esquina noroeste del Parque del Buen Retiro, la visita a la Puerta de Alcalá es una buena oportunidad para adentrarnos en éste. </p>
-                </div>
-            </div>
-            <br>
-            <div class="details">
-                <h3>Imágenes</h3>
-                <hr>
-                <!--Start Image Gallery -->
-                <div class="container">
-                    <div class="row">
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-4 col-6">
-                                <a href="#" title="La Catedral desde lejos"><img src="images/catedralImage1.jpg" class="thumbnail img-responsive"></a>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-6">
-                                <a href="#" title="La Catedral de frente"><img src="images/catedralImage2.jpg" class="thumbnail img-responsive"></a>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-6">
-                                <a href="#" title="El interior de la Catedral"><img src="images/catedralImage3.jpg" class="thumbnail img-responsive"></a>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-6">
-                                <a href="#" title="Catedral de la Almudena"><img src="images/catedralImage4.jpg" class="thumbnail img-responsive"></a>
+            <div class="contact">
+                <div class="contact-form">
+                    <form method="post" action="index.html">
+                        <div> <span><label>Name</label></span> <span><input name="userName" type="text" class="textbox"></span> </div>
+                        <div> <span><label>E-mail</label></span> <span><input name="userEmail" type="text" class="textbox"></span> </div>
+                        <div> <span><label>Mensaje</label></span> <span><input name="userPhone" type="text" class="textbox"></span> </div>
+                        <!--Start Image Gallery -->
+                        <br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="col-lg-3 col-sm-4 col-6">
+                                        <a title="La Catedral desde lejos"><img src="images/catedralImage1.jpg" class="thumbnail img-responsive" alt="Imagen 1 de la catedral" /></a>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-6">
+                                        <a title="La Catedral de frente"><img src="images/catedralImage2.jpg" class="thumbnail img-responsive" alt="Imagen 2 de la catedral" /></a>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-6">
+                                        <a title="El interior de la Catedral"><img src="images/catedralImage3.jpg" class="thumbnail img-responsive" alt="Imagen 3 de la catedral" /></a>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-4 col-6">
+                                        <a title="Catedral de la Almudena"><img src="images/catedralImage4.jpg" class="thumbnail img-responsive" alt="Imagen 4 de la catedral" /></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h3 class="modal-title">Heading</h3> </div>
-                            <div class="modal-body"> </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">Heading</h3> </div>
+                                    <div class="modal-body"> </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <br>
+                        <!--End Image Gallery -->
+                        <div> <span><input type="submit" class="" value="Enviar"></span> </div>
+                    </form>
                 </div>
-                <!--End Image Gallery -->
+                <div class="clear"> </div>
             </div>
-            <br>
-            <div class="details">
-                <h3>Localización</h3>
-                <hr>
-                <p class="para">Plaza de la Independencia, 1, 28001 Madrid</p>
-                <br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.49702546854!2d-3.6909256846981378!3d40.419991979364724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42289a4a865227%3A0x98278b3a144a86f1!2sPuerta+de+Alcal%C3%A1!5e0!3m2!1ses!2ses!4v1491156964527" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <br>
-            <p>
-                <a type="button" class="btn btn-default btn-sm" href="lugares.html"> <span class="glyphicon glyphicon-circle-arrow-left"></span> Visitar otros lugares </a>
-            </p>
         </div>
     </div>
     <!-- start footer -->
