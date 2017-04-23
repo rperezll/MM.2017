@@ -3,10 +3,10 @@
 
 <head>
     <title>ConoceMadrid</title>
-    <meta name=”description” content="Página donde podrá ponerse en contacto con nosotros para resolver cualquier duda. " />
-    <meta name=”keyword” content="Madrid, Contacto" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lugares de interés que debe visitar antes de irse de Madrid" />
+    <meta name="keywords" content="Madrid, Lugares, Interes, Actividad">
+    <meta name="author" content="Alberto, Jaime, Ramon y Roberto" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -45,10 +45,14 @@
                 <div class="social-icons">
                     <ul>
                         <li>
-                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook"></a>
+                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook">
+                                <div style="display: none">Facebook</div>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter"></a>
+                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter">
+                                <div style="display: none">Twitter</div>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -117,9 +121,17 @@
             <div class="contact">
                 <div class="contact-form">
                     <form method="post" action="index.html">
-                        <div> <span><label>Name</label></span> <span><input name="Nombre" type="text" class="textbox"></span> </div>
-                        <div> <span><label>E-mail</label></span> <span><input name="Email" type="text" class="textbox"></span> </div>
-                        <div> <span><label>Mensaje</label></span> <span><input name="Mensaje" type="text" class="textbox"></span> </div>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <input id="nombre" type="text" name="textfield" />
+                        <br>
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input id="email" type="text" name="textfield" />
+                        <br>
+                        <label for="mensaje">Mensaje</label>
+                        <br>
+                        <input id="mensaje" type="text" name="textfield" />
                         <br>
                         <div class="form-group">
                             <div class="col-md-3">
@@ -164,15 +176,19 @@
                             easingType: 'easeOutQuart'
                         });
                     });
-                </script> <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+                </script> <a href="#" id="toTop" style="display: block;" aria-label="Volver al principio"><span id="toTopHover" style="opacity: 1;"><div style="display: none">Volver al principio</div></span></a>
                 <!--end scroll_top_btn -->
                 <div class="social-icons">
                     <ul>
                         <li>
-                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook"></a>
+                            <a href="https://es-es.facebook.com/ComunidadMadrid/" target="_blank" aria-label="Facebook">
+                                <div style="display: none">Facebook</div>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter"></a>
+                            <a href="https://twitter.com/comunidadmadrid?lang=es" target="_blank" aria-label="Twitter">
+                                <div style="display: none">Twitter</div>
+                            </a>
                         </li>
                     </ul>
                 </div>
