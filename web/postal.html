@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <title>ConoceMadrid</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lugares de interés que debe visitar antes de irse de Madrid" />
     <meta name="keywords" content="Madrid, Lugares, Interes, Actividad">
@@ -21,16 +22,8 @@
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript">
-        jQuery(document).ready(function ($) {
-            $(".scroll").click(function (event) {
-                event.preventDefault();
-                $('html,body').animate({
-                    scrollTop: $(this.hash).offset().top
-                }, 1200);
-            });
-        });
-    </script>
+    <script type="text/javascript" src="js/toTop"></script>
+
 </head>
 
 <body>
